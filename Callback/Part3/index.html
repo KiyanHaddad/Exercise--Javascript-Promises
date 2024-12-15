@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokémon Catcher</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #eef2f7; /* Subtle light gray-blue */
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      padding: 12px 18px;
+      background-color: #3498db; /* Light blue button */
+      color: #fff;
+      border-radius: 6px; /* Slightly larger border radius */
+      border: none;
+      font-size: 16px;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #1e90ff; /* Brighter blue hover */
+      transform: scale(1.05); /* Slight button zoom on hover */
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    #pokemon-area {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 230px; /* Slightly larger card */
+      margin: 12px;
+      background-color: #ffffff; /* White card background */
+      border: 2px solid #3498db; /* Light blue border */
+      border-radius: 10px; /* Increased card border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+    }
+
+    .card h1 {
+      font-size: 20px; /* Slightly larger text */
+      color: #2c3e50; /* Darker text color */
+      margin-bottom: 10px;
+    }
+
+    .card img {
+      width: 130px; /* Slightly larger image */
+      height: auto;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555; /* Slightly darker text for description */
+    }
+  </style>
+</head>
+
+<body>
+  <button id="catch-pokemon">Catch Pokémon!</button>
+  <div id="pokemon-area"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

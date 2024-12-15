@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokémon Catcher</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #eef2f7; /* Very light gray-blue */
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      padding: 15px 25px;
+      background-color: #4b79a1; /* Muted blue */
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
+      margin: 20px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3a6281; /* Slightly darker muted blue */
+    }
+
+    button:focus,
+    button:active {
+      outline: none;
+    }
+
+    #pokemon-area {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 240px;
+      background-color: #ffffff; /* White card background */
+      border: 2px solid #4b79a1; /* Muted blue border */
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h1 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .card img {
+      width: 120px;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pokémon Catcher</h1>
+  <p>Click the button below to catch Pokémon!</p>
+  <button id="catch-pokemon">Catch Pokémon!</button>
+  <div id="pokemon-area"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
